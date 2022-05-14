@@ -1,0 +1,26 @@
+body {
+    background-image: url('./assets/images/background.jpeg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: honeydew;
+    padding-top: 1em;
+}
+
+.image {
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 2rem 1rem rgba(0, 0, 0, 0.5);;
+}
+.description {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: honeydew;
+}
+
+
