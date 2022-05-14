@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>CSS MemSlider</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <h1>When you are a beginner programmer</h1>
@@ -15,35 +17,43 @@
             <input type="radio" name="radio" id="two">
             <input type="radio" name="radio" id="three">
             <input type="radio" name="radio" id="four">
-            <div class="slider__images">
-                <img class="image" src="assets/images/first-commit.jpeg" alt="mem">
-                <img class="image" src="assets/images/my-css.jpeg" alt="mem">
-                <img class="image" src="assets/images/fucking-printer.jpeg" alt="mem">
-                <img class="image" src="assets/images/my-code.jpeg" alt="mem">
+            <div class="slider__visible">
+                <div class="slider__images">
+                    <img class="image" src="assets/images/first-commit.jpeg" alt="mem">
+                    <img class="image" src="assets/images/my-css.jpeg" alt="mem">
+                    <img class="image" src="assets/images/fucking-printer.jpeg" alt="mem">
+                    <img class="image" src="assets/images/my-code.jpeg" alt="mem">
+                </div>
             </div>
-            <div class="slider__controls">
-                <label class="control" for="one">
-                    <div></div>
-                </label>
-                <label class="control" for="two">
-                    <div></div>
-                </label>
-                <label class="control" for="three">
-                    <div></div>
-                </label>
-                <label class="control" for="four">
-                    <div></div>
-                </label>
-            </div>
-            <div class="slider__description">
-                <span class="description description-one">colleagues are afraid of you</span>
-                <span class="description description-two">you are a great experimenter</span>
-                <span class="description description-three">tell your friends who is a system administrator</span>
-                <span class="description description-four">and write code 5 days a week</span>
+            <div class="description-container">
+                <div class="slider__controls">
+                    <label class="control" for="one">
+                        <div class="round"></div>
+                    </label>
+                    <label class="control" for="two">
+                        <div class="round"></div>
+                    </label>
+                    <label class="control" for="three">
+                        <div class="round"></div>
+                    </label>
+                    <label class="control" for="four">
+                        <div class="round"></div>
+                    </label>
+                </div>
+                <div class="slider__visible-descriptions">
+                    <div class="slider__description">
+                        <span class="description description-one">colleagues are afraid of you</span>
+                        <span class="description description-two">you are a great experimenter</span>
+                        <span class="description description-three">tell your friends who is a system</br>
+                            administrator</span>
+                        <span class="description description-four">and write code 5 days a week</span>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
     </div>
-    
+
 </body>
+
 </html>
