@@ -90,8 +90,12 @@ input {
 }
 .round:hover {
     background: honeydew;
-    transition: 1s;
+    transition: 0.5s;
     transform: scale(1.1);
+}
+.round:active {
+    background: #fff;
+    transform: scale(0.8);
 }
 
 #one:checked ~ .slider__visible > .slider__images {
@@ -119,4 +123,30 @@ input {
 }
 #four:checked ~ .description-container > .slider__visible-descriptions > .slider__description {
     transform: translateX(-71%);
+}
+
+
+#one:checked ~ .description-container > .slider__controls > .control:nth-child(1) > .round.selected-one {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #7cc1b1;
+    background: transparent;
+}
+#two:checked ~ .description-container > .slider__controls > .control:nth-child(2) > .round.selected-two {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #7cc1b1;
+    background: transparent;
+}
+#three:checked ~ .description-container > .slider__controls > .control:nth-child(3) > .round.selected-three {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #7cc1b1;
+    background: transparent;
+}
+#four:checked ~ .description-container > .slider__controls > .control:nth-child(4) > .round.selected-four {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #7cc1b1;
+    background: transparent;
 }
