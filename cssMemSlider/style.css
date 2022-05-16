@@ -1,0 +1,180 @@
+body {
+    background-image: url('./assets/images/cat.jpeg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0%;
+    padding: 0%;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: honeydew;
+    padding-top: 1.5em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    max-width: 34.4rem;
+    padding: 0 1.5rem;
+    margin: auto;
+}
+
+input {
+    width: 0%;
+    height: 0%;
+    margin: 0%;
+}
+#one:checked {
+    border: 0.2rem solid #a1c9dd;
+    background: transparent;
+}
+
+.slider__visible {
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    box-shadow: 0rem 0.1rem 0.6rem 0.1rem white;
+}
+.slider__images {
+    display: flex;
+}
+.image {
+    width: 100%;
+    height: auto;
+    transition: all 3s ease-in-out;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 100%;
+}
+.slider__visible-descriptions {
+    max-width: 100%;
+    overflow: hidden;
+}
+.slider__description {
+    display: flex;
+    width: calc(100% * 4);
+    align-items: flex-start;
+}
+.description {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: honeydew;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.slider__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.control:hover {
+    color: honeydew;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.round {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 0;
+    background: #a1c9dd;
+    margin: 0.5rem;
+}
+.round:hover {
+    background: honeydew;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.round:active {
+    background: #fff;
+    transform: scale(0.8);
+}
+
+
+
+#one:checked ~ .slider__visible > .slider__images {
+    transform: translateX(0%);
+    transition: all .5s ease-in-out;
+}
+#two:checked ~ .slider__visible > .slider__images {
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+#three:checked ~ .slider__visible > .slider__images {
+    transform: translateX(-200%);
+    transition: all .5s ease-in-out;
+}
+#four:checked ~ .slider__visible > .slider__images {
+    transform: translateX(-300%);
+    transition: all .5s ease-in-out;
+}
+
+
+#one:checked ~ .description-container > .slider__visible-descriptions > .slider__description {
+    transform: translateX(0%);
+    transition: all .5s ease-in-out;
+}
+#two:checked ~ .description-container > .slider__visible-descriptions > .slider__description {
+    transform: translateX(-25%);
+    transition: all .5s ease-in-out;
+}
+#three:checked ~ .description-container > .slider__visible-descriptions > .slider__description {
+    transform: translateX(-50%);
+    transition: all .5s ease-in-out;
+}
+#four:checked ~ .description-container > .slider__visible-descriptions > .slider__description {
+    transform: translateX(-75%);
+    transition: all .5s ease-in-out;
+}
+
+
+#one:checked ~ .description-container > .slider__controls > .control:nth-child(1) > .round.selected-one {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #a1c9dd;
+    background: transparent;
+}
+#two:checked ~ .description-container > .slider__controls > .control:nth-child(2) > .round.selected-two {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #a1c9dd;
+    background: transparent;
+}
+#three:checked ~ .description-container > .slider__controls > .control:nth-child(3) > .round.selected-three {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #a1c9dd;
+    background: transparent;
+}
+#four:checked ~ .description-container > .slider__controls > .control:nth-child(4) > .round.selected-four {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.2rem solid #a1c9dd;
+    background: transparent;
+}
+
+@media screen and (max-width: 500px) {
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
